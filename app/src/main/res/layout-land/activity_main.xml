@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/textoPuntosT1"
+                style="@style/ScoreText"
+                android:layout_width="118dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="297dp"
+                android:layout_marginLeft="297dp"
+                android:layout_marginEnd="316dp"
+                android:layout_marginRight="316dp"
+                android:layout_marginBottom="66dp"
+                android:text="@string/_0" />
+
+            <TextView
+                android:id="@+id/idTeam1"
+                style="@style/TeamText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="333dp"
+                android:layout_marginRight="333dp"
+                android:text="@string/team_1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="30sp" />
+
+            <ImageButton
+                android:id="@+id/menosT1"
+                style="@style/MinusButtons"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/idTeam1"
+                android:layout_marginTop="38dp"
+                android:layout_marginEnd="244dp"
+                android:layout_marginRight="244dp"
+                android:layout_toStartOf="@+id/masT1"
+                android:layout_toLeftOf="@+id/masT1"
+
+                android:contentDescription="@string/minus_button"
+                android:onClick="decreaseScore"
+                 />
+
+            <ImageButton
+                android:id="@+id/masT1"
+                style="@style/PlusButtons"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/idTeam1"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="46dp"
+                android:layout_marginEnd="173dp"
+                android:layout_marginRight="173dp"
+
+                android:contentDescription="@string/plus_button"
+                android:onClick="increaseScore"
+                 />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/idTeam2"
+                style="@style/TeamText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="322dp"
+                android:layout_marginRight="322dp"
+                android:text="@string/team_2"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="30sp" />
+
+            <TextView
+                android:id="@+id/textoPuntosT2"
+                android:layout_width="76dp"
+                android:layout_height="55dp"
+                android:layout_below="@+id/idTeam2"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="43dp"
+                android:layout_marginEnd="330dp"
+                android:layout_marginRight="330dp"
+                android:text="@string/_0"
+                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                android:textSize="30sp" />
+
+            <ImageButton
+                android:id="@+id/menosT2"
+                style="@style/MinusButtons"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="99dp"
+                android:layout_marginEnd="71dp"
+                android:layout_marginRight="71dp"
+                android:layout_toStartOf="@+id/textoPuntosT2"
+                android:layout_toLeftOf="@+id/textoPuntosT2"
+
+                android:contentDescription="@string/minus_button"
+                android:onClick="decreaseScore"
+               />
+
+            <ImageButton
+                android:id="@+id/masT2"
+                style="@style/PlusButtons"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="98dp"
+                android:layout_marginEnd="165dp"
+                android:layout_marginRight="165dp"
+
+                android:contentDescription="@string/plus_button"
+                android:onClick="increaseScore"
+                 />
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
